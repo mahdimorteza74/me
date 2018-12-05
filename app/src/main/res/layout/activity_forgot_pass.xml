@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yardbird.justice.yardbird.ForgotPassActivity">
+
+    <TextView
+        android:id="@+id/FPTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="فراموشی رمز عبور"
+        android:textColor="#FF5722"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FPTitle"
+        android:hint="Username"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/newPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameET"
+        android:layout_marginTop="8dp"
+        android:hint="New Password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/reenterNewPasswordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newPasswordET"
+        android:layout_marginTop="8dp"
+        android:hint="Re-enter New Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/setAsNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reenterNewPasswordET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/button_round_corners"
+        android:clickable="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="تایید رمز عبور جدید"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setAsNewPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_round_corners"
+        android:clickable="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="بازگشت به صفخه ی ورود"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp" />
+</RelativeLayout>

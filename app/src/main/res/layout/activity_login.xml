@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mahdi.mrt.xxxmxkxkxlxl.Interfaces.LoginActivity">
+
+    <ImageView
+        android:id="@+id/YarbirdLogo"
+        android:layout_width="276dp"
+        android:layout_height="158dp"
+        android:src="@drawable/logo1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/YarbirdLogo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="45dp"
+        android:hint="Username"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edUsername"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="45dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="ورود"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round_corners"
+        android:layout_below="@id/edPassword"
+        android:onClick="onLogin"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="ثبت نام"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_round_corners2"
+        android:layout_below="@id/btnLogin"/>
+
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:text="رمز عبورم رو فراموش کردم"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:background="@drawable/button_round_corners2"
+        android:layout_below="@id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/YarbirdLogo"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/edUsername"
+        android:layout_toRightOf="@+id/edUsername"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_button"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/edUsername"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/edPassword"
+        android:layout_toRightOf="@+id/edPassword"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_button"
+        android:clickable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help" />
+
+</RelativeLayout>
+

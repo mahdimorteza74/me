@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name" translatable="false">forooshgah</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="section_format" translatable="false">Hello World from section: %1$d</string>
+    <string name="title_activity_detail">AminHozoorema</string>
+
+    <!-- Empty Cart Text -->
+    <string name="cart_empty">کالایی موجود نیست.</string>
+    <string name="title_activity_payment">پرداخت</string>
+
+    <!-- Spinner data: Card Type -->
+    <string-array name="names">
+        <item>Visa</item>
+        <item>Visa Debit</item>
+        <item>MaterCard</item>
+        <item>Maestro</item>
+        <item>American Express</item>
+    </string-array>
+
+    <!-- Spinner data: Months -->
+    <string-array name="month">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <!-- Spinner data: Year -->
+    <string-array name="year">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+    <string name="title_activity_thanks">AminHozoorema</string>
+    <string name="title_activity_track_order">پیگیری سفارش</string>
+
+    <string name="title_activity_deal">AminHozoorema - Deals</string>
+</resources>

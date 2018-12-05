@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Interfaces.SignUpActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ثبت نام"
+        android:layout_marginTop="10dp"
+        android:textSize="50sp"
+        android:fontFamily="@font/irsans"
+        android:textStyle="bold"
+        android:textColor="#FF5722"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام"
+        android:layout_below="@+id/title"/>
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام خانوادگی"
+        android:layout_below="@+id/firstname"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/lastname"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/username"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ایمیل"
+        android:layout_below="@id/password"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/mobilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="موبایل"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/email"/>
+
+    <Button
+        android:id="@+id/createAccountButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mobilePhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_round_corners"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="ایجاد حساب"
+        android:textColor="#FFFFFF"
+
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/loginReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/createAccountButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/createAccountButton"
+        android:layout_below="@+id/createAccountButton"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_round_corners"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="بازگشت"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <ImageButton
+        android:id="@+id/usernameHelpButton"
+        android:src="@drawable/help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/username"
+        android:layout_toRightOf="@+id/username"
+        android:layout_toEndOf="@+id/username" />
+
+    <ImageButton
+        android:id="@+id/passwordHelpButton"
+        android:src="@drawable/help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle_button"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/password"
+        android:layout_toRightOf="@+id/password"
+        android:layout_toEndOf="@+id/password" />
+
+</RelativeLayout>
+

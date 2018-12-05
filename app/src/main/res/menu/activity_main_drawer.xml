@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homeblack"
+            android:title="خانه"
+            android:font="@font/irsans"
+            />
+
+        <item
+            android:id="@+id/nav_foods"
+            android:icon="@drawable/dishwasher"
+            android:title="ماشین ظرفشویی"
+            android:font="@font/irsans"/>
+        <item
+            android:id="@+id/nav_drinks"
+            android:font="@font/irsans"
+            android:icon="@drawable/fridge"
+            android:title="یخچال" />
+        <item
+            android:id="@+id/nav_deals"
+            android:icon="@drawable/washingmachine"
+            android:title="ماشین لباسشویی"
+            android:font="@font/irsans"
+
+            />
+        <item
+            android:id="@+id/oven"
+            android:icon="@drawable/oven"
+            android:title="اجاق گاز"
+            android:font="@font/irsans"/>
+    </group>
+
+    <item android:title="تنظیمات"
+        android:font="@font/irsans">
+        <menu>
+            <item
+                android:id="@+id/sefareshat"
+                android:icon="@drawable/bbasket"
+                android:title="لیست سفارشات"
+                android:background="#ff0606"
+                android:font="@font/irsans"
+                android:color="@color/white"
+
+                />
+
+            <item
+                android:id="@+id/darbare"
+                android:title="درباره ما"
+                android:font="@font/irsans"/>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="خروج"
+                android:font="@font/irsans"/>
+        </menu>
+    </item>
+
+</menu>
